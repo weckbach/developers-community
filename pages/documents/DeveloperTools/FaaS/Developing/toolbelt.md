@@ -213,17 +213,15 @@ const apiCredentials = {
 // Create instance with API credentials
 const conversationUtil = Toolbelt.ConversationUtil(apiCredentials);
 
-// Get conversation
-const conversation = await conversationUtil.getConversationById(conversationId);
-
 // Determine Keywords
 const keywords = ["Keyword", "awesome"];
 
-// Scan Conversation for Keywords
-const scannerResult = conversationUtil.scanConversationForKeywords(
-  conversation,
-  keywords
-);
+// Get conversation and scan it for keywords
+const scannerResult = conversationUtil.getConversationById(conversationId)
+    .then(conversation => conversationUtil.scanConversationForKeywords(conversation, keywords))
+    .catch(err => //TODO: React to error);
+
+//TODO: Handle ScannerResult
 ```
 
 **Sample Result**
