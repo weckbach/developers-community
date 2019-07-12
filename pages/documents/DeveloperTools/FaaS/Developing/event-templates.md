@@ -111,8 +111,12 @@ Additionally, Functions offers a number of templates that are not connected to e
     <td>An example of how to use the Secret Storage.</td>
   </tr>
   <tr>
-    <td>Email Client Template</td>
-    <td>An example of how to use SMTP client.</td>
+    <td>Keyword Scanner</td>
+    <td>An example of how to use the Keyword Scanner on conversation end.</td>
+  </tr>
+  <tr>
+    <td>Replace Files for Conversation</td>
+    <td>An example of how to use GDPR file replacement on conversation end.</td>
   </tr>
 </tbody>
 </table>
