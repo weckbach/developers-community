@@ -217,11 +217,10 @@ const conversationUtil = Toolbelt.ConversationUtil(apiCredentials);
 const keywords = ["Keyword", "awesome"];
 
 // Get conversation and scan it for keywords
-const scannerResult = conversationUtil.getConversationById(conversationId)
+conversationUtil.getConversationById(conversationId)
     .then(conversation => conversationUtil.scanConversationForKeywords(conversation, keywords))
+    .then(scannerResults => //TODO: Handle result)
     .catch(err => //TODO: React to error);
-
-//TODO: Handle ScannerResult
 ```
 
 **Sample Result**
