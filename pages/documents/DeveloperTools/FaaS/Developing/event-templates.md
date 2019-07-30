@@ -114,5 +114,13 @@ Additionally, Functions offers a number of templates that are not connected to e
     <td>Email Client Template</td>
     <td>An example of how to use SMTP client.</td>
   </tr>
+  <tr>
+    <td>Replace Files for Conversation</td>
+    <td>An example of how to replace all files on conversation end with another file.</td>
+  </tr>
+  <tr>
+    <td>Keyword Scanner</td>
+    <td>An example of how to scan the message transcript for certain keywords on conversation end. The result, for instance, can be sent via email (see Email Client Template).</td>
+  </tr>
 </tbody>
 </table>
